@@ -1,0 +1,290 @@
+@import "fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  background-color: black;
+
+}
+
+.nav {
+  padding: 25px 0;
+}
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+.nav__list-link {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+}
+.header__content {
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 961px;
+  position: relative;
+}
+.header__content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.76);
+}
+.header__content-title {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 80px;
+  font-weight: 700;
+}
+.header__content-text {
+  z-index: 1;
+  position: relative;
+}
+.header__content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__content {
+  display: flex;
+}
+.header__content-descr {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+  max-width: 960px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__style {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+
+  font-weight: 400;
+  line-height: 30px;
+  border-radius: 10px;
+  background: #149a03;
+
+  width: 180px;
+  height: 50px;
+  padding: 10px 15px;
+}
+.movies {
+  margin-top: 25px;
+}
+.movies__content {
+  display: flex;
+  align-items: center;
+}
+.movies__title {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 700;
+}
+.movies__cards {
+  display: flex;
+  margin-top: 43px;
+}
+.movies__card {
+  display: flex;
+  gap: 25px;
+}
+
+.serials {
+  margin-top: 52px;
+}
+.serials__title {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 700;
+}
+.serials__content {
+  display: flex;
+  align-items: center;
+}
+.serials__cards {
+  display: flex;
+  margin-top: 43px;
+}
+.serials__card {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 51px;
+}
+span {
+  color: #149a03;
+  font-family: "MontserratAlternates";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.top10 {
+  padding-top: 30px;
+  background: #fff;
+}
+.img-holder {
+  position: relative;
+}
+.img-holder::before {
+  content: "";
+  background: linear-gradient(90deg, #141414 0%, rgba(20, 20, 20, 0) 102.08%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.img-holder-number {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 150px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.top10__title {
+  color: #141414;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+}
+.top10__content {
+  display: flex;
+  align-items: center;
+}
+.top10__cards {
+  display: flex;
+  margin-top: 88px;
+  margin-bottom: 89px;
+}
+.top10__card {
+  display: flex;
+  gap: 23px;
+}
+.footer {
+  background: #141414;
+  margin-top: 100px;
+}
+
+.footer__icons {
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+}
+.footer__text {
+  padding-left: 55px;
+  margin-top: 50px;
+  color: #a5a5a5;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer__bottom-text {
+  margin-top: 81px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 81px;
+}
+
+.header__item {
+  background-image: url('../images/next__tor.png');
+  display: flex;
+  max-width: 576px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  left: 700px;
+}
+.header__item-gradient {
+  position: absolute;
+  background: linear-gradient(90deg, #000 55.64%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  padding: 15px 0 30px 15px;
+}
+.header__item-gradient p {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__item-gradient h4 {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 700;
+}
+.header__item-line {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.header__item-line::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  animation: fill 10s infinite ease-in-out;
+}
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
